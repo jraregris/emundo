@@ -1,0 +1,142 @@
+﻿/*   
+Theme Name: eMundo One
+Theme URI: http://www.oddmundo.com
+Description: A skin-from-scratch to power oddmundo.com
+Author: Oddmund
+Author URI: http://www.oddmundo.com
+Version: 0.02-pre
+*/
+
+
+
+/** Layout */
+
+
+
+.top {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	
+}
+
+.mainContent {
+	
+	width: 80em;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	}
+	
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+	margin: 0 -150px 1em 1em;
+	border: 0;
+	}
+	
+img.alignright {
+	float: right;
+}
+
+p.timestamp, p.commentlink {
+	width: 10em;
+	margin-top: 0em;
+	margin-left: -11em;
+	float: left;
+	text-align: right;
+	color: #62694a;
+}
+
+p.commentlink {
+	float: none;
+	margin-top: 1em;
+	margin-left: 0;
+	text-align: left;
+
+}
+
+.footer {
+	font-size: 0.75em;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto 0 auto;
+	clear: both;
+	color: #62694A;
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+}
+
+/** Colours */
+html{
+	background-color: #333;
+
+	}
+
+h2 {
+	background-color: #800;
+}
+
+.top {
+	
+	background-image: url('http://www.oddmundo.com/face.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+	color: #c4d395;
+}
+	
+a, a:visited, a:active {
+	color: inherit;
+}
+	
+/** Typography */
+
+html {
+	font-size: 11px;
+	line-height: 1em;
+	font-family: monospace;
+	}
+
+h1 {
+	font-family: serif;
+ font-size: 8em;
+ width: 100%;
+ text-align: center;
+}
+
+h1 a{
+	text-decoration: none;
+}
+
+h2 {
+ font-family: serif;
+ font-size: 2em;
+ line-height: 1em;
+}
+
+h2 a{
+	text-decoration: none;
+}
+
+p {
+  text-align: left;
+  
+}
+
+.commentlink {
+	
+}
+
+ol.commentlist{
+  list-style: none;
+}
