@@ -46,14 +46,19 @@ img.alignright {
 	float: right;
 }
 
-p.timestamp, p.commentlink {
-	width: 10em;
-	margin-top: 0em;
-	margin-left: -11em;
-	float: left;
-	text-align: right;
-	color: #62694a;
+p.commentlink {
+	color: #fff;
 }
+
+p.timestamp{
+	margin-top: -1em;
+	font-size: 2em;
+	line-height: 1em;
+	float: right;
+	text-align: right;
+	color: #fff;
+}
+
 
 p.commentlink {
 	float: none;
@@ -77,10 +82,15 @@ p.commentlink {
     text-align: center;
 }
 
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /** Colours */
 html{
 	background-color: #333;
-
+	color: #ccc;
 	}
 
 h2 {
@@ -92,11 +102,50 @@ h2 {
 	background-image: url('http://www.oddmundo.com/face.png');
 	background-position: top right;
 	background-repeat: no-repeat;
-	color: #c4d395;
+	
 }
 	
-a, a:visited, a:active {
-	color: inherit;
+a, a:active {
+	color: #F33;
+}
+
+a:visited {
+	color: #833;
+}
+
+a:hover {
+	background-color: #fff;
+}
+
+h1 a,
+h1 a:visited,
+h1 a:active
+{
+	color: #ccc;
+}
+
+h2 a,
+h2 a:visited,
+h2 a:active
+{
+	color: #fff;
+}
+
+h2 a:hover{
+	color: #800;
+}
+
+h1 a:hover{
+	background-color: #800;
+}
+
+strong{
+	color: #fff;
+}
+
+h3{
+	color: #fff;
+	background-color: #433;
 }
 	
 /** Typography */
@@ -104,29 +153,27 @@ a, a:visited, a:active {
 html {
 	font-size: 11px;
 	line-height: 1em;
-	font-family: monospace;
+	font-family: "Terminus", "DejaVu Sans Mono", monospace;
 	}
 
 h1 {
 	font-family: serif;
- font-size: 8em;
- width: 100%;
- text-align: center;
+	font-size: 8em;
+	width: 100%;
+	text-align: center;
 }
 
-h1 a{
+h1 a,
+h2 a,
+a{
 	text-decoration: none;
 }
 
 h2 {
- font-family: serif;
  font-size: 2em;
  line-height: 1em;
 }
 
-h2 a{
-	text-decoration: none;
-}
 
 p {
   text-align: left;

@@ -20,11 +20,7 @@ if(have_posts()){
 		echo("</h2>");
 		echo('<p class="timestamp">');
 			
-         		the_time('d/m');
-			echo("<br />");
-                        the_time('Y');
-                        echo("<br />");
-			the_time();
+         		the_time(); echo(" "); the_time('d-m'); echo("-"); the_time('Y');  
 
 		echo("</p>");
 			the_content();
