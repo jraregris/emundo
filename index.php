@@ -38,5 +38,24 @@ comments_template();
 
 ?>
 </div>
+
+<div class="sidebar">
+<?php
+
+if(have_pages(){
+	echo('<ul>');
+	while (have_pages()) : the_page();
+	      echo("<li>");
+		echo('<a href="');
+			 the_permalink();
+		echo('">');
+			the_title();
+		echo("</li>");
+	endwhile;
+	echo("</ul>");
+}
+
+?>
+</div>
 <?php
 get_footer();

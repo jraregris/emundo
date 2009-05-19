@@ -22,11 +22,16 @@ Version: 0.02-pre
 
 .mainContent {
 	
-	width: 80em;
+	width: 65em;
 	margin: 0 auto 0 auto;
 	display: block;
 }
 
+
+.sidebar {
+   width: 15em;
+   display: block;
+}
 body{
 	margin: 0;
 	padding: 0;
