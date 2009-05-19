@@ -20,17 +20,31 @@ Version: 0.02-pre
 	
 }
 
+.content {
+	width: 80em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .mainContent {
+
 	
-	width: 65em;
-	margin: 0 auto 0 auto;
+	width: 64em;
+	float: left;
 	display: block;
+	border: solid 0;
+	border-color: #433;
+	padding-right: 0.5em;
+	border-right: solid thin #433;
+	
 }
 
 
 .sidebar {
    width: 15em;
    display: block;
+	float: right;
+	list-style: none;
 }
 body{
 	margin: 0;
@@ -191,4 +205,37 @@ p {
 
 ol.commentlist{
   list-style: none;
+}
+
+
+/* Sidebar stuffs */
+
+.sidebar #searchform{
+	margin-bottom: 1em;
+}
+
+.sidebar #searchform:before{
+/*	content: "Search:"; */
+}
+
+.sidebar #searchform input#s{
+
+
+	height: 1em;
+	background: inherit;
+	border-color: #433;
+	border: solid thin #433;
+	font-family: inherit;
+	color: inherit;
+}
+
+.sidebar #searchform input#searchsubmit{
+
+	color: inherit;
+	border: none;
+	display: none;
+}
+
+.sidebar #searchform label{
+	display: none;
 }

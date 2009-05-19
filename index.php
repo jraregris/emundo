@@ -5,8 +5,12 @@ get_header();
 /** Title */
 ?>
 <div class="top">
+<div class="content">
+<div class="header">
+  <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+</div>
 <div class="mainContent">
-<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+
 <?php
 /** Posts */
 if(have_posts()){
@@ -40,22 +44,14 @@ comments_template();
 </div>
 
 <div class="sidebar">
+
+
+<?php if ( !function_exists('dynamic_sidebar')
+	|| !dynamic_sidebar() ) : ?>
 <?php
-
-if(have_pages(){
-	echo('<ul>');
-	while (have_pages()) : the_page();
-	      echo("<li>");
-		echo('<a href="');
-			 the_permalink();
-		echo('">');
-			the_title();
-		echo("</li>");
-	endwhile;
-	echo("</ul>");
-}
-
+endif;
 ?>
+</div>
 </div>
 <?php
 get_footer();
